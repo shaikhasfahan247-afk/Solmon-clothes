@@ -1,0 +1,134 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #2874f0;
+  color: #fff;
+}
+header input {
+  width: 60%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+header .icons span {
+  margin: 0 8px;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  overflow-x: auto;
+  background: #fff;
+  padding: 10px;
+  gap: 20px;
+}
+nav div {
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+nav .active {
+  color: #2874f0;
+  border-bottom: 2px solid #2874f0;
+}
+.hero {
+  width: 100%;
+  height: 200px;
+  background: url('https://source.unsplash.com/featured/?scooter') center/cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  gap: 15px;
+  padding: 15px;
+}
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.product-card h4 {
+  margin: 8px 0 4px;
+  font-size: 14px;
+}
+.product-card p {
+  margin: 0;
+  color: green;
+  font-weight: bold;
+}
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+.modal-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.modal-buttons button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-cart { background: orange; color: #fff; }
+.btn-buy { background: green; color: #fff; }
+.btn-close { background: red; color: #fff; }
+/* Bottom nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+.bottom-nav div {
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.bottom-nav .active {
+  color: #2874f0;
+  font-weight: bold;
+    }
